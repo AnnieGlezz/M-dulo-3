@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; 
+  color: #333; 
+  margin: 0; 
+  padding: 0; 
+}
+
+h2, h3 {
+  color: #007acc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #007acc;
+  color: #fff; 
+}
+
+#curso-section, #student-section {
+  display: block; 
+}
+
+#curso-form, #student-form {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007acc;
+  color: #fff; 
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #00578c; 
+}
+
+
+#student-section button {
+  background-color: #333;
+}
+
+#student-section button:hover {
+  background-color: #555; 
+}

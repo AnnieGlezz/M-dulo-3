@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Estudiantes y Cursos</title>
+  <link rel="stylesheet" href="alumnos.css">
+</head>
+<body>
+
+  <h2>Gestión de Estudiantes y Cursos</h2>
+
+
+  <button id="estudiantes-btn">Estudiantes</button>
+  <button id="cursos-btn">Cursos</button>
+
+  <div id="curso-section">
+    <h3>Gestión de Cursos</h3>
+    <div id="curso-form">
+      <!-- Contenido del formulario -->
+      <label for="nombre-curso">Nombre del Curso:</label>
+      <input type="text" id="nombre-curso">
+      <label for="materias-curso">Materias del Curso (separadas por comas):</label>
+      <input type="text" id="materias-curso">
+      <button id="alta-curso-btn">Alta de Curso</button>
+    </div>
+
+    <table id="curso-table">
+  
+      <thead>
+        <tr>
+          <th>Nombre del Curso</th>
+          <th>Materias</th>
+        </tr>
+      </thead>
+      <tbody id="curso-table-body">
+    
+      </tbody>
+    </table>
+  </div>
+
+
+  <div id="student-section">
+    <h3>Información de Estudiantes</h3>
+    <div id="student-form">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos">
+      <label for="edad">Edad:</label>
+      <input type="text" id="edad">
+      <label for="curso">Curso:</label>
+      <select id="curso">
+
+      </select>
+      <button id="alta-btn">Alta</button>
+      <button onclick="buscarPorNombre()">Buscar por Nombre</button>
+      <button onclick="buscarByApellido()">Buscar por Apellido</button>
+      <button onclick="obtenerPromedioGrupo()">Promedio del Grupo</button>
+      <button onclick="obtenerListaAlumnosOrdenada(true)">Ordenar Ascendente</button>
+      <button onclick="obtenerListaAlumnosOrdenada(false)">Ordenar Descendente</button>
+      <button onclick="borrarLocalStorage()">Borrar Local Storage</button>
+    </div>
+
+    <table id="student-table">
+   
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Edad</th>
+          <th>Curso</th>
+          <th>Materias</th>
+          <th>Calificaciones</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="student-table-body">
+  
+      </tbody>
+    </table>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
